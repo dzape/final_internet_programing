@@ -32,20 +32,6 @@ namespace Sports.Controllers
             List<Players> sportsContext = _context.Players.Where(p => p.SportId == id).ToList();
             return View(sportsContext);
         }
-        //public async Task<IActionResult> ViewSports()
-        //{
-        //    //EmployeeContext employeeContext = new EmployeeContext();
-
-        //    //var sports = _context.Sport.FirstOrDefault(a => a.SportId == sport.SportId);
-
-        //    //List<Employee> employees = employeeContext.Employees.Where(x => x.DepartmentID == id).ToList();
-        //    //TempData["SportId"] = id;
-        //    //TempData.Keep();
-        //    //return View(sports);
-
-        //    return View(await _context.Sport.ToListAsync());
-
-        //}
 
         // GET: Sports
         public async Task<IActionResult> Index()

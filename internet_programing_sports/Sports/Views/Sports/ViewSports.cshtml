@@ -10,11 +10,20 @@
 <div>
     <h2>Sports List</h2>
     @Html.ActionLink("Create new sport", "Create")
+</div>
 
-    <ul>
+<div>
+    <h4>Sport</h4>
+    <hr />
+    <dl class="row">
         @foreach (Sport sport in @Model)
         {
+        <dt class="col-sm-2">
             <li>@Html.ActionLink(sport.SportName, "BySportId", "Sports", new { id = sport.SportId }, null)</li>
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
         }
-    </ul>
+        </dl>
 </div>

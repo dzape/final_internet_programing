@@ -39,11 +39,6 @@
                 </td>
             </tr>
         }
-        
-        @foreach (Sport sport in @Model)
-        {
-            <li>@Html.ActionLink(sport.SportName, "Players", new { id = sport.SportId }, null)</li>
-        }
 
     </tbody>
 </table>
