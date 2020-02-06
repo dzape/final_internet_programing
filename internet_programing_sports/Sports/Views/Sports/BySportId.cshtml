@@ -1,0 +1,16 @@
+﻿
+@model IEnumerable<Sports.Models.Players>
+
+@{
+    ViewData["Title"] = "BySportId";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>BySportId</h1>
+
+<ul>
+    @foreach (Players players in @Model)
+    {
+        <li>@Html.ActionLink(players.FullName, "Details", "Players", new { id = players.PlayerId }, null)</li>
+    }
+</ul>
