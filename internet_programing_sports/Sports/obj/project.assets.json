@@ -8608,19 +8608,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dzape\\.nuget\\packages\\": {}
+    "C:\\Users\\pniko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dzape\\Desktop\\internet_programing_final\\internet_programing_sports\\Sports\\Sports.csproj",
+      "projectUniqueName": "E:\\Projects\\_final\\internet_programing_sports\\Sports\\Sports.csproj",
       "projectName": "Sports",
-      "projectPath": "C:\\Users\\dzape\\Desktop\\internet_programing_final\\internet_programing_sports\\Sports\\Sports.csproj",
-      "packagesPath": "C:\\Users\\dzape\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dzape\\Desktop\\internet_programing_final\\internet_programing_sports\\Sports\\obj\\",
+      "projectPath": "E:\\Projects\\_final\\internet_programing_sports\\Sports\\Sports.csproj",
+      "packagesPath": "C:\\Users\\pniko\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\_final\\internet_programing_sports\\Sports\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dzape\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8685,7 +8685,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

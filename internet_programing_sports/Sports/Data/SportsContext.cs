@@ -7,7 +7,6 @@ namespace Sports.Data
 {
     public partial class SportsContext : DbContext
     {
-
         public SportsContext(DbContextOptions<SportsContext> options)
             : base(options)
         {
