@@ -26,25 +26,25 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (Sport players in Model)
+        @foreach (Sport sport in Model)
         {
             <tr>
                 <td>
-                    @Html.ActionLink(players.SportName, "BySportId", "Sports", new { id = players.SportId }, null)
+                    @Html.ActionLink(sport.SportName, "BySportId", "Sports", new { id = players.SportId }, null)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => players.SportName)
+                    @Html.DisplayFor(modelItem => sport.SportName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => players.SportId)
+                    @Html.DisplayFor(modelItem => sport.SportId)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => players.Description)
+                    @Html.DisplayFor(modelItem => sport.Description)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@players.SportId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@players.SportId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@players.SportId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@sport.SportId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@sport.SportId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@sport.SportId">Delete</a>
                 </td>
             </tr>
         }
