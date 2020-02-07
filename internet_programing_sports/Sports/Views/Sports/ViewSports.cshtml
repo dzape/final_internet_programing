@@ -6,24 +6,47 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 <div>
     <h2>Sports List</h2>
     @Html.ActionLink("Create new sport", "Create")
 </div>
 
-<div>
-    <h4>Sport</h4>
-    <hr />
-    <dl class="row">
-        @foreach (Sport sport in @Model)
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SportName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SportId)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Sport players in Model)
         {
-        <dt class="col-sm-2">
-            <li>@Html.ActionLink(sport.SportName, "BySportId", "Sports", new { id = sport.SportId }, null)</li>
-        </dt>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+            <tr>
+                <td>
+                    @Html.ActionLink(players.SportName, "BySportId", "Sports", new { id = players.SportId }, null)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => players.SportName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => players.SportId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => players.Description)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@players.SportId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@players.SportId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@players.SportId">Delete</a>
+                </td>
+            </tr>
         }
-        </dl>
-</div>
+    </tbody>
+</table>
